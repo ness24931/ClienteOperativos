@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor</title>
+</head>
+
+<body>
+    <div>
+        <div class="medidas">
+            <select id="list_medidas">
+                <option value="0">Longitud</option>
+                <option value="1">Tiempo</option>
+                <option value="2">Masa</option>
+                <option value="3">Temperatura</option>
+            </select>
+            <input id="txt_val" placeholder="Digite el valor a convertir">
+            <button onclick="convertir()">convertir</button>
+        </div>
+        <div class="resultados">
+            <span id="text_result">0.00</span>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
