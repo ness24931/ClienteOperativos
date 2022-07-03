@@ -11,11 +11,14 @@
 <body>
     <div>
         <div class="medidas">
-            <select id="list_medidas">
+            <select id="list_medidas" name="list_medidas" onchange="getUnidades(this.value)">
                 <option value="0">Longitud</option>
                 <option value="1">Tiempo</option>
                 <option value="2">Masa</option>
                 <option value="3">Temperatura</option>
+            </select>
+            <select id="list_unidades" name="list_unidades">
+                <option value="-1">--</option>
             </select>
             <input id="txt_val" placeholder="Digite el valor a convertir">
             <button onclick="convertir()">convertir</button>
